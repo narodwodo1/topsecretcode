@@ -1,8 +1,6 @@
 
 var jsonQ = require('jsonq');
 
-console.log('Hello World');
-
 var someJSON = {
     "fathers": [{
         "age": 44,
@@ -172,9 +170,4 @@ var someJSON = {
 var myJSONmagician = jsonQ(someJSON);
 var nameArray = myJSONmagician.find('name');
 console.log(nameArray.value());
-
-var husbandArray = myJSONmagician.find('husband');
-console.log(husbandArray.value());
-
-var filterHusband = husbandArray.filter({'age':30});
-console.log(filterHusband.value());
+console.log('Did this here');
