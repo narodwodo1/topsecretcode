@@ -170,6 +170,4 @@ var someJSON = {
 var myJSONmagician = jsonQ(someJSON);
 var nameArray = myJSONmagician.find('name');
 console.log(nameArray.value());
-
-var husbandArray = myJSONmagician.find('husband');
-//console.log(husbandArray.value());
+console.log('Did this here');
